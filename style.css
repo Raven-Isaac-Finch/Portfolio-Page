@@ -1,3 +1,162 @@
+#home-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+#home-page #main-container {
+  position: absolute;
+  left: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+#home-page #main-container h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+}
+#home-page #main-container h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+}
+#home-page #main-container #home-icon-holder i {
+  color: #f5b73b;
+  font-size: 60px;
+  margin: 0 40px;
+  transition: 0.2s ease-in-out;
+}
+#home-page #main-container #home-icon-holder i:hover {
+  color: #7b7a75;
+  transform: scale(1.1);
+}
+#home-page #home-picture {
+  position: absolute;
+  width: 35vw;
+  height: 100vh;
+  top: 0;
+  right: 150px;
+}
+#home-page .line-across {
+  background-color: #f5b73b;
+  height: 100vh;
+  width: 5px;
+  position: fixed;
+  right: 60px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home-page .line-across i {
+  font-size: 50px;
+  color: #f5b73b;
+  cursor: pointer;
+}
+
+#about-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#about-page #about-picture {
+  position: absolute;
+  opacity: 0.3;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+#about-page #greeting {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40vw;
+  margin-bottom: 20px;
+}
+#about-page #greeting .yellow-line {
+  background-color: #f5b73b;
+  width: 5px;
+  height: 100px;
+}
+#about-page #greeting .fa-user {
+  font-size: 60px;
+  color: #f5b73b;
+}
+#about-page #greeting h5 {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+#about-page #about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40vw;
+  margin-bottom: 100px;
+}
+#about-page #about-me .yellow-line {
+  background-color: #f5b73b;
+  width: 5px;
+  height: 100px;
+}
+#about-page #about-me p {
+  width: 91.5%;
+  font-family: "Playfair Display", serif;
+  line-height: 25px;
+  font-size: 18px;
+}
+#about-page #skills {
+  background-color: #f5b73b;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about-page #skills i {
+  font-size: 80px;
+  margin: 0 40px;
+}
+
+#experience-page #experience-picture {
+  position: absolute;
+  opacity: 0.3;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+#experience-page .experience-container {
+  position: relative;
+  width: 90%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#experience-page h2 {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  top: 20px;
+}
+#experience-page .horizontal.line {
+  position: absolute;
+  height: 5px;
+  width: 90vw;
+  background-color: #f5b73b;
+}
+#experience-page .vertical.line {
+  position: absolute;
+  width: 5px;
+  height: 50vh;
+  background-color: #f5b73b;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -72,130 +231,6 @@ html {
 #navigator #top-left-menu .theme-selector .selected-theme {
   background-color: #f5b73b;
   border-radius: 0 25px 25px 0;
-}
-
-#home-page {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-#home-page #main-container {
-  position: absolute;
-  left: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-}
-#home-page #main-container h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 35px;
-}
-#home-page #main-container h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 25px;
-}
-#home-page #main-container #home-icon-holder i {
-  color: #f5b73b;
-  font-size: 60px;
-  margin: 0 40px;
-  transition: 0.2s ease-in-out;
-}
-#home-page #main-container #home-icon-holder i:hover {
-  color: #7b7a75;
-  transform: scale(1.1);
-}
-#home-page #home-picture {
-  position: absolute;
-  width: 35vw;
-  height: 100vh;
-  top: 0;
-  right: 150px;
-}
-#home-page .line-across {
-  background-color: #f5b73b;
-  height: 100vh;
-  width: 5px;
-  position: fixed;
-  right: 60px;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#home-page .line-across i {
-  font-size: 50px;
-  color: #f5b73b;
-  cursor: pointer;
-}
-
-#about-page {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#about-page #about-picture {
-  position: absolute;
-  opacity: 0.2;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-}
-#about-page #greeting {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 40vw;
-  margin-bottom: 20px;
-}
-#about-page #greeting .yellow-line {
-  background-color: #f5b73b;
-  width: 5px;
-  height: 100px;
-}
-#about-page #greeting .fa-user {
-  font-size: 60px;
-  color: #f5b73b;
-}
-#about-page #greeting h5 {
-  font-weight: bold;
-  font-size: 25px;
-  font-family: "Montserrat", sans-serif;
-}
-#about-page #about-me {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 40vw;
-  margin-bottom: 100px;
-}
-#about-page #about-me .yellow-line {
-  background-color: #f5b73b;
-  width: 5px;
-  height: 100px;
-}
-#about-page #about-me p {
-  width: 91.5%;
-  font-family: "Playfair Display", serif;
-  line-height: 25px;
-  font-size: 18px;
-}
-#about-page #skills {
-  background-color: #f5b73b;
-  width: 100vw;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#about-page #skills i {
-  font-size: 80px;
-  margin: 0 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+@import '../absract/variables';
+
+#experience-page {
+    #experience-picture {
+        position: absolute;
+        opacity: 0.3;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+    .experience-container {
+        position: relative;
+        width: 90%;
+        height: 90vh;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2 {
+        position: absolute;
+        font-family: $font-secondary;
+        font-size: 35px;
+        top: 20px;
+    }
+    .horizontal.line {
+        position: absolute;
+        height: 5px;
+        width: 90vw;
+        background-color: $orange-color;
+    }
+    .vertical.line {
+        position: absolute;
+        width: 5px;
+        height: 50vh;
+        background-color: $orange-color;
+    }
+}
