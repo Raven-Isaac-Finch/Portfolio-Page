@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +17,9 @@
   align-items: center;
   flex-direction: column;
   position: fixed;
+  z-index: 1;
 }
-#navigator div {
+#navigator a {
   background-color: #7b7a75;
   height: 35px;
   width: 35px;
@@ -22,24 +27,19 @@
   cursor: pointer;
   margin: 10px 0;
 }
-
-#home-page {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-#home-page #top-left-menu {
+#navigator #top-left-menu {
   position: absolute;
   left: 40px;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#home-page #top-left-menu #language-selector {
+#navigator #top-left-menu #language-selector {
   display: flex;
 }
-#home-page #top-left-menu #language-selector p {
+#navigator #top-left-menu #language-selector p {
   margin: 20px 0px;
   padding: 10px 15px;
   background-color: #7b7a75;
@@ -48,26 +48,36 @@
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-#home-page #top-left-menu #language-selector p:hover {
+#navigator #top-left-menu #language-selector p:hover {
   background-color: black;
   color: white;
 }
-#home-page #top-left-menu #language-selector .selected-language {
+#navigator #top-left-menu #language-selector .selected-language {
   background-color: #f5b73b;
   border-radius: 0 25px 25px 0;
 }
-#home-page #top-left-menu .theme-selector {
+#navigator #top-left-menu .theme-selector {
   display: flex;
 }
-#home-page #top-left-menu .theme-selector i {
+#navigator #top-left-menu .theme-selector i {
   padding: 12px;
   background-color: #7b7a75;
   border-radius: 25px 0 0 25px;
   cursor: pointer;
 }
-#home-page #top-left-menu .theme-selector .selected-theme {
+#navigator #top-left-menu .theme-selector i:hover {
+  background-color: black;
+  color: white;
+}
+#navigator #top-left-menu .theme-selector .selected-theme {
   background-color: #f5b73b;
   border-radius: 0 25px 25px 0;
+}
+
+#home-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 #home-page #main-container {
   position: absolute;
@@ -101,15 +111,91 @@
   width: 35vw;
   height: 100vh;
   top: 0;
-  right: 120px;
+  right: 150px;
 }
 #home-page .line-across {
   background-color: #f5b73b;
   height: 100vh;
   width: 5px;
-  position: absolute;
+  position: fixed;
   right: 60px;
   top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home-page .line-across i {
+  font-size: 50px;
+  color: #f5b73b;
+  cursor: pointer;
+}
+
+#about-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#about-page #about-picture {
+  position: absolute;
+  opacity: 0.2;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+#about-page #greeting {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40vw;
+  margin-bottom: 20px;
+}
+#about-page #greeting .yellow-line {
+  background-color: #f5b73b;
+  width: 5px;
+  height: 100px;
+}
+#about-page #greeting .fa-user {
+  font-size: 60px;
+  color: #f5b73b;
+}
+#about-page #greeting h5 {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+#about-page #about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40vw;
+  margin-bottom: 100px;
+}
+#about-page #about-me .yellow-line {
+  background-color: #f5b73b;
+  width: 5px;
+  height: 100px;
+}
+#about-page #about-me p {
+  width: 91.5%;
+  font-family: "Playfair Display", serif;
+  line-height: 25px;
+  font-size: 18px;
+}
+#about-page #skills {
+  background-color: #f5b73b;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about-page #skills i {
+  font-size: 80px;
+  margin: 0 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
