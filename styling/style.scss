@@ -1,5 +1,5 @@
 @import './absract/variables';
-@import './pages/home', './pages/about', './pages/experience';
+@import './pages/home', './pages/about', './pages/experience', './pages/projects';
 
 html {
     scroll-behavior: smooth;
@@ -30,6 +30,15 @@ html {
         cursor: pointer;
         margin: 10px 0;
     }
+    .__home,
+    .__about,
+    .__exp,
+    .__projects {
+        font-family: $font-secondary;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
     #top-left-menu {
         position: absolute;
         left: 40px;

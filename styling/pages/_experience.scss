@@ -11,17 +11,144 @@
     .experience-container {
         position: relative;
         width: 90%;
-        height: 90vh;
+        height: 100vh;
         margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    h2 {
+    .education {
         position: absolute;
-        font-family: $font-secondary;
-        font-size: 35px;
-        top: 20px;
+        top: 50px;
+        left: 120px;
+        &__bachelor {
+            border-bottom: 2px solid white;
+            margin-bottom: 50px;
+            .school {
+                font-weight: bold;
+                font-size: 18px;
+                font-family: $font-secondary;
+            }
+            .title {
+                font-size: 18px;
+            }
+            .degree {
+                font-size: 14px;
+                font-style: italic;
+                font-family: $font-primary;
+            }
+        }
+        &__master {
+            border-bottom: 2px solid white;
+            .school {
+                font-weight: bold;
+                font-size: 18px;
+                font-family: $font-secondary;
+            }
+            .title {
+                font-size: 18px;
+            }
+            .degree {
+                font-size: 14px;
+                font-style: italic;
+                font-family: $font-primary;
+            }
+        }
+    }
+    .certificate {
+        position: absolute;
+        bottom: 20px;
+        left: 320px;
+        width: 350px;
+        .one,
+        .two,
+        .three,
+        .four,
+        .five,
+        .six,
+        .seven {
+            display: flex;
+            justify-content: space-between;margin-bottom: 10px;
+            border-bottom: 2px solid white;
+            .from {
+                font-weight: bold;
+                font-family: $font-secondary;
+                font-size: 16px;
+            }
+            .for {
+                font-size: 14px;
+            }
+            .in {
+                font-style: italic;
+                font-size: 14px;
+            }
+        }
+    }
+    .past-experience {
+        position: absolute;
+        top: 50px;
+        left: 820px;
+        .exp-one,
+        .exp-two {
+            margin-bottom: 50px;
+            border-bottom: 2px solid white;
+            .where {
+                font-weight: bold;
+                font-size: 18px;
+                font-family: $font-secondary;
+            }
+            .job-title {
+                font-size: 18px;
+            }
+            .date {
+                font-size: 14px;
+                font-style: italic;
+                font-family: $font-primary;
+            }
+        }
+    }
+    .it-experience {
+        position: absolute;
+        bottom: 250px;
+        left: 1020px;
+        .where {
+            font-weight: bold;
+            font-size: 18px;
+            font-family: $font-secondary;
+        }
+        .job-title {
+            font-size: 18px;
+        }
+        .date {
+            font-size: 14px;
+            font-style: italic;
+            font-family: $font-primary;
+        }
+    }
+    .education-symbol,
+    .cert-symbol,
+    .pe-symbol,
+    .ie-symbol {
+        position: absolute;
+        z-index: 1;
+        background-color: $orange-color;
+        padding: 10px;
+        font-size: 26px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .education-symbol {
+        left: 80px;
+    }
+    .cert-symbol {
+        left: 280px;
+    }
+    .pe-symbol {
+        left: 780px;
+    }
+    .ie-symbol {
+        left: 980px;
     }
     .horizontal.line {
         position: absolute;
@@ -34,5 +161,21 @@
         width: 5px;
         height: 50vh;
         background-color: $orange-color;
+    }
+    .vertical.line.one {
+        top: 0;
+        left: 100px;
+    }
+    .vertical.line.two {
+        bottom: 0;
+        left: 300px;
+    }
+    .vertical.line.three {
+        top: 0;
+        left: 800px;
+    }
+    .vertical.line.four {
+        bottom: 0;
+        left: 1000px;
     }
 }

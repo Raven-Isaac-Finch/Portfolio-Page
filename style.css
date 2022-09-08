@@ -132,17 +132,166 @@
 #experience-page .experience-container {
   position: relative;
   width: 90%;
-  height: 90vh;
+  height: 100vh;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#experience-page h2 {
+#experience-page .education {
   position: absolute;
+  top: 50px;
+  left: 120px;
+}
+#experience-page .education__bachelor {
+  border-bottom: 2px solid white;
+  margin-bottom: 50px;
+}
+#experience-page .education__bachelor .school {
+  font-weight: bold;
+  font-size: 18px;
   font-family: "Montserrat", sans-serif;
-  font-size: 35px;
-  top: 20px;
+}
+#experience-page .education__bachelor .title {
+  font-size: 18px;
+}
+#experience-page .education__bachelor .degree {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+#experience-page .education__master {
+  border-bottom: 2px solid white;
+}
+#experience-page .education__master .school {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+#experience-page .education__master .title {
+  font-size: 18px;
+}
+#experience-page .education__master .degree {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+#experience-page .certificate {
+  position: absolute;
+  bottom: 20px;
+  left: 320px;
+  width: 350px;
+}
+#experience-page .certificate .one,
+#experience-page .certificate .two,
+#experience-page .certificate .three,
+#experience-page .certificate .four,
+#experience-page .certificate .five,
+#experience-page .certificate .six,
+#experience-page .certificate .seven {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+#experience-page .certificate .one .from,
+#experience-page .certificate .two .from,
+#experience-page .certificate .three .from,
+#experience-page .certificate .four .from,
+#experience-page .certificate .five .from,
+#experience-page .certificate .six .from,
+#experience-page .certificate .seven .from {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+#experience-page .certificate .one .for,
+#experience-page .certificate .two .for,
+#experience-page .certificate .three .for,
+#experience-page .certificate .four .for,
+#experience-page .certificate .five .for,
+#experience-page .certificate .six .for,
+#experience-page .certificate .seven .for {
+  font-size: 14px;
+}
+#experience-page .certificate .one .in,
+#experience-page .certificate .two .in,
+#experience-page .certificate .three .in,
+#experience-page .certificate .four .in,
+#experience-page .certificate .five .in,
+#experience-page .certificate .six .in,
+#experience-page .certificate .seven .in {
+  font-style: italic;
+  font-size: 14px;
+}
+#experience-page .past-experience {
+  position: absolute;
+  top: 50px;
+  left: 820px;
+}
+#experience-page .past-experience .exp-one,
+#experience-page .past-experience .exp-two {
+  margin-bottom: 50px;
+  border-bottom: 2px solid white;
+}
+#experience-page .past-experience .exp-one .where,
+#experience-page .past-experience .exp-two .where {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+#experience-page .past-experience .exp-one .job-title,
+#experience-page .past-experience .exp-two .job-title {
+  font-size: 18px;
+}
+#experience-page .past-experience .exp-one .date,
+#experience-page .past-experience .exp-two .date {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+#experience-page .it-experience {
+  position: absolute;
+  bottom: 250px;
+  left: 1020px;
+}
+#experience-page .it-experience .where {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+#experience-page .it-experience .job-title {
+  font-size: 18px;
+}
+#experience-page .it-experience .date {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+#experience-page .education-symbol,
+#experience-page .cert-symbol,
+#experience-page .pe-symbol,
+#experience-page .ie-symbol {
+  position: absolute;
+  z-index: 1;
+  background-color: #f5b73b;
+  padding: 10px;
+  font-size: 26px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+}
+#experience-page .education-symbol {
+  left: 80px;
+}
+#experience-page .cert-symbol {
+  left: 280px;
+}
+#experience-page .pe-symbol {
+  left: 780px;
+}
+#experience-page .ie-symbol {
+  left: 980px;
 }
 #experience-page .horizontal.line {
   position: absolute;
@@ -155,6 +304,105 @@
   width: 5px;
   height: 50vh;
   background-color: #f5b73b;
+}
+#experience-page .vertical.line.one {
+  top: 0;
+  left: 100px;
+}
+#experience-page .vertical.line.two {
+  bottom: 0;
+  left: 300px;
+}
+#experience-page .vertical.line.three {
+  top: 0;
+  left: 800px;
+}
+#experience-page .vertical.line.four {
+  bottom: 0;
+  left: 1000px;
+}
+
+#projects-page {
+  width: 100vw;
+  height: 100vh;
+}
+#projects-page #projects-picture {
+  position: absolute;
+  opacity: 0.3;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+#projects-page .page-container {
+  position: relative;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#projects-page .page-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+#projects-page .page-container .project-one,
+#projects-page .page-container .project-two {
+  background-color: rgba(123, 122, 117, 0.3);
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+#projects-page .page-container .project-one #blackjack-img,
+#projects-page .page-container .project-one #countries-img,
+#projects-page .page-container .project-two #blackjack-img,
+#projects-page .page-container .project-two #countries-img {
+  width: 260px;
+  height: 160px;
+}
+#projects-page .page-container .project-one .text-container,
+#projects-page .page-container .project-two .text-container {
+  padding: 20px;
+  width: 800px;
+}
+#projects-page .page-container .project-one .text-container .app-title,
+#projects-page .page-container .project-two .text-container .app-title {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+#projects-page .page-container .project-one .text-container .app-desc,
+#projects-page .page-container .project-two .text-container .app-desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+#projects-page .page-container .project-one .btn-container,
+#projects-page .page-container .project-two .btn-container {
+  padding: 10px 10px 0 0;
+}
+#projects-page .page-container .project-one .btn-container button,
+#projects-page .page-container .project-two .btn-container button {
+  margin-bottom: 10px;
+  width: 70px;
+  height: 65px;
+  background-color: #f5b73b;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+#projects-page .page-container .project-one .btn-container button:hover,
+#projects-page .page-container .project-two .btn-container button:hover {
+  background-color: #7b7a75;
+  transform: scale(1.1);
+  color: #f5b73b;
+  box-shadow: 0px 5px 15px 0px #000000;
 }
 
 html {
@@ -185,6 +433,14 @@ html {
   border-radius: 50%;
   cursor: pointer;
   margin: 10px 0;
+}
+#navigator .__home,
+#navigator .__about,
+#navigator .__exp,
+#navigator .__projects {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
 }
 #navigator #top-left-menu {
   position: absolute;

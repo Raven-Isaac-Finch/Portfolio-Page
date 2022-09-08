@@ -1,0 +1,76 @@
+@import '../absract/variables';
+
+#projects-page {
+    width: 100vw;
+    height: 100vh;
+    #projects-picture {
+        position: absolute;
+        opacity: 0.3;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+    .page-container {
+        position: relative;
+        width: 90%;
+        height: 100vh;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            font-family: $font-secondary;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .project-one,
+        .project-two {
+            background-color: rgba($color: #7b7a75, $alpha: 0.3);
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid white;
+            #blackjack-img,
+            #countries-img {
+                width: 260px;
+                height: 160px;
+            }
+            .text-container {
+                padding: 20px;
+                width: 800px;
+                .app-title {
+                    font-weight: bold;
+                    font-size: 16px;
+                    font-family: $font-secondary;
+                    margin-bottom: 10px;
+                }
+                .app-desc {
+                    font-family: $font-secondary;
+                    font-size: 14px;
+                }
+            }
+            .btn-container {
+                padding: 10px 10px 0 0 ;
+                button {
+                    margin-bottom: 10px;
+                    width: 70px;
+                    height: 65px;
+                    background-color: $orange-color;
+                    border: none;
+                    font-family: $font-secondary;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: 0.1s ease-in-out;
+                    &:hover {
+                        background-color: $grey-color;
+                        transform: scale(1.1);
+                        color: $orange-color;
+                        box-shadow: 0px 5px 15px 0px #000000;
+                    }
+                }
+            }
+        }
+    }
+}
