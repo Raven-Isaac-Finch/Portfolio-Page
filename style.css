@@ -326,6 +326,13 @@
   width: 100vw;
   height: 100vh;
 }
+#projects-page h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  position: absolute;
+  left: 45%;
+  margin-top: 15px;
+}
 #projects-page #projects-picture {
   position: absolute;
   opacity: 0.3;
@@ -336,21 +343,18 @@
 #projects-page .page-container {
   position: relative;
   width: 90%;
-  height: 100vh;
+  height: 100%;
   margin: auto;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
-#projects-page .page-container h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  margin-bottom: 10px;
 }
 #projects-page .page-container .project-one,
-#projects-page .page-container .project-two {
-  background-color: rgba(123, 122, 117, 0.3);
+#projects-page .page-container .project-two,
+#projects-page .page-container .project-three,
+#projects-page .page-container .project-four {
+  background-color: rgba(123, 122, 117, 0.4);
   width: 80%;
   margin: auto;
   display: flex;
@@ -359,37 +363,66 @@
 }
 #projects-page .page-container .project-one #blackjack-img,
 #projects-page .page-container .project-one #countries-img,
+#projects-page .page-container .project-one #hangman-img,
+#projects-page .page-container .project-one #heroes-img,
 #projects-page .page-container .project-two #blackjack-img,
-#projects-page .page-container .project-two #countries-img {
+#projects-page .page-container .project-two #countries-img,
+#projects-page .page-container .project-two #hangman-img,
+#projects-page .page-container .project-two #heroes-img,
+#projects-page .page-container .project-three #blackjack-img,
+#projects-page .page-container .project-three #countries-img,
+#projects-page .page-container .project-three #hangman-img,
+#projects-page .page-container .project-three #heroes-img,
+#projects-page .page-container .project-four #blackjack-img,
+#projects-page .page-container .project-four #countries-img,
+#projects-page .page-container .project-four #hangman-img,
+#projects-page .page-container .project-four #heroes-img {
   width: 260px;
   height: 160px;
 }
 #projects-page .page-container .project-one .text-container,
-#projects-page .page-container .project-two .text-container {
+#projects-page .page-container .project-two .text-container,
+#projects-page .page-container .project-three .text-container,
+#projects-page .page-container .project-four .text-container {
   padding: 20px;
-  width: 800px;
+  width: 550px;
 }
 #projects-page .page-container .project-one .text-container .app-title,
-#projects-page .page-container .project-two .text-container .app-title {
+#projects-page .page-container .project-two .text-container .app-title,
+#projects-page .page-container .project-three .text-container .app-title,
+#projects-page .page-container .project-four .text-container .app-title {
   font-weight: bold;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
 }
 #projects-page .page-container .project-one .text-container .app-desc,
-#projects-page .page-container .project-two .text-container .app-desc {
+#projects-page .page-container .project-two .text-container .app-desc,
+#projects-page .page-container .project-three .text-container .app-desc,
+#projects-page .page-container .project-four .text-container .app-desc {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 #projects-page .page-container .project-one .btn-container,
-#projects-page .page-container .project-two .btn-container {
+#projects-page .page-container .project-two .btn-container,
+#projects-page .page-container .project-three .btn-container,
+#projects-page .page-container .project-four .btn-container {
   padding: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-#projects-page .page-container .project-one .btn-container button,
-#projects-page .page-container .project-two .btn-container button {
+#projects-page .page-container .project-one .btn-container a,
+#projects-page .page-container .project-two .btn-container a,
+#projects-page .page-container .project-three .btn-container a,
+#projects-page .page-container .project-four .btn-container a {
+  text-decoration: none;
+  color: #000000;
+  width: 80px;
+  height: 60px;
   margin-bottom: 10px;
-  width: 70px;
-  height: 65px;
+  padding-top: 10px;
+  text-align: center;
   background-color: #f5b73b;
   border: none;
   font-family: "Montserrat", sans-serif;
@@ -397,12 +430,60 @@
   cursor: pointer;
   transition: 0.1s ease-in-out;
 }
-#projects-page .page-container .project-one .btn-container button:hover,
-#projects-page .page-container .project-two .btn-container button:hover {
+#projects-page .page-container .project-one .btn-container a:hover,
+#projects-page .page-container .project-two .btn-container a:hover,
+#projects-page .page-container .project-three .btn-container a:hover,
+#projects-page .page-container .project-four .btn-container a:hover {
   background-color: #7b7a75;
   transform: scale(1.1);
   color: #f5b73b;
   box-shadow: 0px 5px 15px 0px #000000;
+}
+#projects-page .project-index-container {
+  height: 90%;
+}
+#projects-page .project-index-container h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#projects-page .project-index-container .container {
+  display: grid;
+  grid-template: 200px 200px 200px/100%;
+  gap: 10px;
+}
+#projects-page .project-index-container .container .react-projects,
+#projects-page .project-index-container .container .html-css-projects,
+#projects-page .project-index-container .container .javascript-projects {
+  background-color: rgba(190, 190, 190, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#projects-page .project-index-container .container .react-projects a,
+#projects-page .project-index-container .container .html-css-projects a,
+#projects-page .project-index-container .container .javascript-projects a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  width: 80%;
+  transition: 0.2s ease-in-out;
+}
+#projects-page .project-index-container .container .react-projects a:hover,
+#projects-page .project-index-container .container .html-css-projects a:hover,
+#projects-page .project-index-container .container .javascript-projects a:hover {
+  transform: scale(1.2);
+  border-bottom: 1px solid black;
+  background-color: rgba(231, 231, 231, 0.5);
+  border-radius: 15px;
+}
+#projects-page .project-index-container .container .react-projects i,
+#projects-page .project-index-container .container .html-css-projects i,
+#projects-page .project-index-container .container .javascript-projects i {
+  font-size: 100px;
 }
 
 html {
