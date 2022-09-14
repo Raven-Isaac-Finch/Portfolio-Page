@@ -1,5 +1,5 @@
 @import './absract/variables';
-@import './pages/home', './pages/about', './pages/experience', './pages/projects';
+@import './pages/home', './pages/about', './pages/experience', './pages/projects', './pages/footer';
 
 html {
     scroll-behavior: smooth;
@@ -88,5 +88,5 @@ html {
     }
 }
 
-
+@import './media/media-s';
 

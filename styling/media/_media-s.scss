@@ -1,0 +1,58 @@
+@import '../absract/variables';
+
+@media (max-width: $width-s) {
+    #home-page {
+        #main-container {
+            h1 {
+                font-size: 30px;
+                width: 250px;
+                text-align: center;
+            }
+            #home-icon-holder {
+                i {
+                    font-size: 50px;
+                    margin: 0 20px;
+                }
+            }
+        }
+        #home-picture {
+            left: 0;
+            right: 0;
+            width: 100vw;
+            opacity: 0.3;
+            z-index: -1;
+        }
+        .line-across {
+            display: none;
+        }
+    }
+    #about-page {
+        #greeting {
+            width: 60vw;
+            margin: 0 0 20px 80px;
+            .fa-user {
+                font-size: 40px;
+                margin: 0 10px;
+            }
+            h5 {
+                font-size: 20px;
+            }
+        }
+        #about-me {
+            width: 60vw;
+            margin: 0 0 50px 70px;
+            .yellow-line {
+                width: 3px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        #skills {
+            i {
+                font-size: 40px;
+                margin: 0 0 0 40px;
+            }
+        }
+    }
+}
