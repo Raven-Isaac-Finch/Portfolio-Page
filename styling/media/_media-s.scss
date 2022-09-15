@@ -55,4 +55,122 @@
             }
         }
     }
+    #experience-page {
+        .education {
+            left: 150px;
+            display: none;
+        }
+        .certificate {
+            top: 150px;
+            left: 150px;
+            width: 60%;
+            display: none;
+        }
+        .past-experience {
+            left: 150px;
+            top: 350px;
+            display: none;
+        }
+        .it-experience {
+            left: 150px;
+            top: 600px;
+            display: none;
+        }
+        .horizontal.line,
+        .vertical.line.two,
+        .vertical.line.three,
+        .vertical.line.four {
+            display: none;
+        }
+        .vertical.line.one {
+            height: 100vh;
+        }
+        .education-symbol {
+            top: 150px;
+            cursor: pointer;
+        }
+        .cert-symbol {
+            top: 300px;
+            left: 80px;
+            cursor: pointer;
+        }
+        .pe-symbol {
+            top: 450px;
+            left: 80px;
+            cursor: pointer;
+        }
+        .ie-symbol {
+            top: 600px;
+            left: 80px;
+            cursor: pointer;
+        }
+    }
+    #projects-page {
+        h2 {
+            position: relative;
+            margin: auto;
+        }
+        .page-container {
+            width: 80%;
+            flex-direction: column;
+            margin: 0 0 0 100px;
+            .project-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                .project-one,
+                .project-two,
+                .project-three,
+                .project-four {
+                    flex-direction: column;
+                    #blackjack-img,
+                    #countries-img,
+                    #hangman-img,
+                    #heroes-img {
+                        display: none;
+                    }
+                    .text-container {
+                        padding: 0;
+                        width: auto;
+                        .app-title {
+                            padding: 5px;
+                        }
+                        .app-desc {
+                            display: none;
+                        }
+                    }
+                    .btn-container {
+                        flex-direction: row;
+                        padding: 0;
+                    }
+                }
+            }
+            .project-index-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 15px;
+                .container {
+                    grid-template: 150px / 100px 100px 100px;
+                    .react-projects,
+                    .html-css-projects,
+                    .javascript-projects {
+                        a {
+                            font-size: 14px;
+                        }
+                        i {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        div {
+            width: 70%;
+            margin-left: 60px;
+        }
+    }
 }

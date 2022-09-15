@@ -595,7 +595,7 @@ html {
   border-radius: 0 25px 25px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   #home-page #main-container h1 {
     font-size: 30px;
     width: 250px;
@@ -639,6 +639,142 @@ html {
   #about-page #skills i {
     font-size: 40px;
     margin: 0 0 0 40px;
+  }
+  #experience-page .education {
+    left: 150px;
+    display: none;
+  }
+  #experience-page .certificate {
+    top: 150px;
+    left: 150px;
+    width: 60%;
+    display: none;
+  }
+  #experience-page .past-experience {
+    left: 150px;
+    top: 350px;
+    display: none;
+  }
+  #experience-page .it-experience {
+    left: 150px;
+    top: 600px;
+    display: none;
+  }
+  #experience-page .horizontal.line,
+#experience-page .vertical.line.two,
+#experience-page .vertical.line.three,
+#experience-page .vertical.line.four {
+    display: none;
+  }
+  #experience-page .vertical.line.one {
+    height: 100vh;
+  }
+  #experience-page .education-symbol {
+    top: 150px;
+    cursor: pointer;
+  }
+  #experience-page .cert-symbol {
+    top: 300px;
+    left: 80px;
+    cursor: pointer;
+  }
+  #experience-page .pe-symbol {
+    top: 450px;
+    left: 80px;
+    cursor: pointer;
+  }
+  #experience-page .ie-symbol {
+    top: 600px;
+    left: 80px;
+    cursor: pointer;
+  }
+  #projects-page h2 {
+    position: relative;
+    margin: auto;
+  }
+  #projects-page .page-container {
+    width: 80%;
+    flex-direction: column;
+    margin: 0 0 0 100px;
+  }
+  #projects-page .page-container .project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #projects-page .page-container .project-container .project-one,
+#projects-page .page-container .project-container .project-two,
+#projects-page .page-container .project-container .project-three,
+#projects-page .page-container .project-container .project-four {
+    flex-direction: column;
+  }
+  #projects-page .page-container .project-container .project-one #blackjack-img,
+#projects-page .page-container .project-container .project-one #countries-img,
+#projects-page .page-container .project-container .project-one #hangman-img,
+#projects-page .page-container .project-container .project-one #heroes-img,
+#projects-page .page-container .project-container .project-two #blackjack-img,
+#projects-page .page-container .project-container .project-two #countries-img,
+#projects-page .page-container .project-container .project-two #hangman-img,
+#projects-page .page-container .project-container .project-two #heroes-img,
+#projects-page .page-container .project-container .project-three #blackjack-img,
+#projects-page .page-container .project-container .project-three #countries-img,
+#projects-page .page-container .project-container .project-three #hangman-img,
+#projects-page .page-container .project-container .project-three #heroes-img,
+#projects-page .page-container .project-container .project-four #blackjack-img,
+#projects-page .page-container .project-container .project-four #countries-img,
+#projects-page .page-container .project-container .project-four #hangman-img,
+#projects-page .page-container .project-container .project-four #heroes-img {
+    display: none;
+  }
+  #projects-page .page-container .project-container .project-one .text-container,
+#projects-page .page-container .project-container .project-two .text-container,
+#projects-page .page-container .project-container .project-three .text-container,
+#projects-page .page-container .project-container .project-four .text-container {
+    padding: 0;
+    width: auto;
+  }
+  #projects-page .page-container .project-container .project-one .text-container .app-title,
+#projects-page .page-container .project-container .project-two .text-container .app-title,
+#projects-page .page-container .project-container .project-three .text-container .app-title,
+#projects-page .page-container .project-container .project-four .text-container .app-title {
+    padding: 5px;
+  }
+  #projects-page .page-container .project-container .project-one .text-container .app-desc,
+#projects-page .page-container .project-container .project-two .text-container .app-desc,
+#projects-page .page-container .project-container .project-three .text-container .app-desc,
+#projects-page .page-container .project-container .project-four .text-container .app-desc {
+    display: none;
+  }
+  #projects-page .page-container .project-container .project-one .btn-container,
+#projects-page .page-container .project-container .project-two .btn-container,
+#projects-page .page-container .project-container .project-three .btn-container,
+#projects-page .page-container .project-container .project-four .btn-container {
+    flex-direction: row;
+    padding: 0;
+  }
+  #projects-page .page-container .project-index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+  #projects-page .page-container .project-index-container .container {
+    grid-template: 150px/100px 100px 100px;
+  }
+  #projects-page .page-container .project-index-container .container .react-projects a,
+#projects-page .page-container .project-index-container .container .html-css-projects a,
+#projects-page .page-container .project-index-container .container .javascript-projects a {
+    font-size: 14px;
+  }
+  #projects-page .page-container .project-index-container .container .react-projects i,
+#projects-page .page-container .project-index-container .container .html-css-projects i,
+#projects-page .page-container .project-index-container .container .javascript-projects i {
+    font-size: 30px;
+  }
+  footer div {
+    width: 70%;
+    margin-left: 60px;
   }
 }
 
