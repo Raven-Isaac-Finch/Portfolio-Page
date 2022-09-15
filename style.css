@@ -1,7 +1,33 @@
+:root {
+  --accent: #f5b73b;
+  --base: #575654;
+  --flat: #eceef1;
+}
+
+.theme-dark {
+  --accent: #18c;
+  --base: #f0f0f0;
+  --flat: #2a2a2a;
+}
+
+:root {
+  --accent: #f5b73b;
+  --base: #575654;
+  --flat: #eceef1;
+}
+
+.theme-dark {
+  --accent: #18c;
+  --base: #f0f0f0;
+  --flat: #2a2a2a;
+}
+
 #home-page {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background-color: var(--flat);
+  color: var(--base);
 }
 #home-page #main-container {
   position: absolute;
@@ -21,13 +47,13 @@
   font-size: 25px;
 }
 #home-page #main-container #home-icon-holder i {
-  color: #f5b73b;
+  color: var(--accent);
   font-size: 60px;
   margin: 0 40px;
   transition: 0.2s ease-in-out;
 }
 #home-page #main-container #home-icon-holder i:hover {
-  color: #7b7a75;
+  color: var(--base);
   transform: scale(1.1);
 }
 #home-page #home-picture {
@@ -38,7 +64,7 @@
   right: 150px;
 }
 #home-page .line-across {
-  background-color: #f5b73b;
+  background-color: var(--accent);
   height: 100vh;
   width: 5px;
   position: fixed;
@@ -48,10 +74,17 @@
   align-items: center;
   justify-content: center;
 }
-#home-page .line-across i {
-  font-size: 50px;
-  color: #f5b73b;
-  cursor: pointer;
+
+:root {
+  --accent: #f5b73b;
+  --base: #575654;
+  --flat: #eceef1;
+}
+
+.theme-dark {
+  --accent: #18c;
+  --base: #f0f0f0;
+  --flat: #2a2a2a;
 }
 
 #about-page {
@@ -62,34 +95,43 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: var(--flat);
 }
 #about-page #about-picture {
   position: absolute;
   opacity: 0.3;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
 }
 #about-page #greeting {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 40vw;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  z-index: 1;
 }
-#about-page #greeting .yellow-line {
-  background-color: #f5b73b;
+#about-page #greeting .yellow-line-one {
+  position: absolute;
+  margin-left: 750px;
+  background-color: var(--accent);
   width: 5px;
   height: 100px;
+  transition: 0.5s ease-in-out;
 }
 #about-page #greeting .fa-user {
   font-size: 60px;
-  color: #f5b73b;
+  color: var(--accent);
+  opacity: 0;
+  transition: 1s ease-in-out;
 }
-#about-page #greeting h5 {
+#about-page #greeting .user-title {
   font-weight: bold;
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
+  color: var(--base);
+  opacity: 0;
+  transition: 1s ease-in-out;
 }
 #about-page #about-me {
   display: flex;
@@ -97,20 +139,28 @@
   justify-content: space-around;
   width: 40vw;
   margin-bottom: 100px;
+  z-index: 1;
 }
-#about-page #about-me .yellow-line {
-  background-color: #f5b73b;
+#about-page #about-me .yellow-line-one {
+  background-color: var(--accent);
   width: 5px;
   height: 100px;
+  position: absolute;
+  margin-left: 750px;
+  transition: 0.5s ease-in-out;
 }
-#about-page #about-me p {
+#about-page #about-me .user-text {
   width: 91.5%;
   font-family: "Playfair Display", serif;
   line-height: 25px;
   font-size: 18px;
+  color: var(--base);
+  opacity: 0;
+  transition: 1s ease-in-out;
 }
 #about-page #skills {
-  background-color: #f5b73b;
+  z-index: 1;
+  background-color: var(--accent);
   width: 100vw;
   height: 20vh;
   display: flex;
@@ -120,14 +170,29 @@
 #about-page #skills i {
   font-size: 80px;
   margin: 0 40px;
+  color: var(--base);
 }
 
+:root {
+  --accent: #f5b73b;
+  --base: #575654;
+  --flat: #eceef1;
+}
+
+.theme-dark {
+  --accent: #18c;
+  --base: #f0f0f0;
+  --flat: #2a2a2a;
+}
+
+#experience-page {
+  background-color: var(--flat);
+}
 #experience-page #experience-picture {
   position: absolute;
   opacity: 0.3;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
 }
 #experience-page .experience-container {
   position: relative;
@@ -142,9 +207,10 @@
   position: absolute;
   top: 50px;
   left: 120px;
+  color: var(--base);
 }
 #experience-page .education__bachelor {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--flat);
   margin-bottom: 50px;
 }
 #experience-page .education__bachelor .school {
@@ -161,7 +227,7 @@
   font-family: "Playfair Display", serif;
 }
 #experience-page .education__master {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--flat);
 }
 #experience-page .education__master .school {
   font-weight: bold;
@@ -181,6 +247,7 @@
   bottom: 20px;
   left: 320px;
   width: 350px;
+  color: var(--base);
 }
 #experience-page .certificate .one,
 #experience-page .certificate .two,
@@ -192,7 +259,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--flat);
 }
 #experience-page .certificate .one .from,
 #experience-page .certificate .two .from,
@@ -228,11 +295,12 @@
   position: absolute;
   top: 50px;
   left: 820px;
+  color: var(--base);
 }
 #experience-page .past-experience .exp-one,
 #experience-page .past-experience .exp-two {
   margin-bottom: 50px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--flat);
 }
 #experience-page .past-experience .exp-one .where,
 #experience-page .past-experience .exp-two .where {
@@ -254,6 +322,7 @@
   position: absolute;
   bottom: 250px;
   left: 1020px;
+  color: var(--base);
 }
 #experience-page .it-experience .where {
   font-weight: bold;
@@ -274,12 +343,13 @@
 #experience-page .ie-symbol {
   position: absolute;
   z-index: 1;
-  background-color: #f5b73b;
+  background-color: var(--accent);
   padding: 10px;
   font-size: 26px;
   border-radius: 100%;
   display: flex;
   align-items: center;
+  color: var(--base);
 }
 #experience-page .education-symbol {
   left: 80px;
@@ -297,13 +367,13 @@
   position: absolute;
   height: 5px;
   width: 90vw;
-  background-color: #f5b73b;
+  background-color: var(--accent);
 }
 #experience-page .vertical.line {
   position: absolute;
   width: 5px;
   height: 50vh;
-  background-color: #f5b73b;
+  background-color: var(--accent);
 }
 #experience-page .vertical.line.one {
   top: 0;
@@ -322,23 +392,37 @@
   left: 1000px;
 }
 
+:root {
+  --accent: #f5b73b;
+  --base: #575654;
+  --flat: #eceef1;
+}
+
+.theme-dark {
+  --accent: #18c;
+  --base: #f0f0f0;
+  --flat: #2a2a2a;
+}
+
 #projects-page {
   width: 100vw;
   height: 100vh;
+  background-color: var(--flat);
 }
 #projects-page h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   position: absolute;
-  left: 45%;
   margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  color: var(--base);
 }
 #projects-page #projects-picture {
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.1;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
 }
 #projects-page .page-container {
   position: relative;
@@ -349,17 +433,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 #projects-page .page-container .project-one,
 #projects-page .page-container .project-two,
 #projects-page .page-container .project-three,
 #projects-page .page-container .project-four {
-  background-color: rgba(123, 122, 117, 0.4);
+  background-color: rgba(123, 122, 117, 0.6);
   width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--flat);
 }
 #projects-page .page-container .project-one .text-container,
 #projects-page .page-container .project-two .text-container,
@@ -376,6 +461,7 @@
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
+  color: var(--accent);
 }
 #projects-page .page-container .project-one .text-container .app-desc,
 #projects-page .page-container .project-two .text-container .app-desc,
@@ -383,6 +469,7 @@
 #projects-page .page-container .project-four .text-container .app-desc {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  color: var(--base);
 }
 #projects-page .page-container .project-one .btn-container,
 #projects-page .page-container .project-two .btn-container,
@@ -398,13 +485,13 @@
 #projects-page .page-container .project-three .btn-container a,
 #projects-page .page-container .project-four .btn-container a {
   text-decoration: none;
-  color: #000000;
+  color: var(--base);
   width: 80px;
   height: 60px;
   margin-bottom: 10px;
   padding-top: 10px;
   text-align: center;
-  background-color: #f5b73b;
+  background-color: var(--accent);
   border: none;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -415,9 +502,9 @@
 #projects-page .page-container .project-two .btn-container a:hover,
 #projects-page .page-container .project-three .btn-container a:hover,
 #projects-page .page-container .project-four .btn-container a:hover {
-  background-color: #7b7a75;
+  background-color: var(--base);
   transform: scale(1.1);
-  color: #f5b73b;
+  color: var(--accent);
   box-shadow: 0px 5px 15px 0px #000000;
 }
 #projects-page .project-index-container {
@@ -443,7 +530,7 @@
 #projects-page .project-index-container .container .javascript-projects a {
   text-decoration: none;
   text-align: center;
-  color: black;
+  color: var(--base);
   font-family: "Montserrat", sans-serif;
   width: 80%;
   transition: 0.2s ease-in-out;
@@ -455,15 +542,29 @@
   border-bottom: 1px solid black;
   background-color: rgba(231, 231, 231, 0.5);
   border-radius: 15px;
+  color: black;
 }
 #projects-page .project-index-container .container .react-projects i,
 #projects-page .project-index-container .container .html-css-projects i,
 #projects-page .project-index-container .container .javascript-projects i {
   font-size: 100px;
+  color: var(--base);
+}
+
+:root {
+  --accent: #f5b73b;
+  --base: #575654;
+  --flat: #eceef1;
+}
+
+.theme-dark {
+  --accent: #18c;
+  --base: #f0f0f0;
+  --flat: #2a2a2a;
 }
 
 footer {
-  background-color: #f5b73b;
+  background-color: var(--accent);
   width: 100vw;
   height: 40vh;
   display: flex;
@@ -477,14 +578,15 @@ footer div p {
 }
 footer a {
   text-decoration: none;
-  color: white;
-  background-color: #7b7a75;
+  color: var(--flat);
+  background-color: var(--base);
   padding: 15px 25px;
   border-radius: 5px;
   transition: 0.2s ease-in-out;
 }
 footer a:hover {
   transform: scale(1.1);
+  box-shadow: 0px 5px 15px 0px #000000;
 }
 
 html {
@@ -498,7 +600,7 @@ html {
 }
 
 #navigator {
-  background-color: #f5b73b;
+  background-color: var(--accent);
   width: 100px;
   height: 100vh;
   display: flex;
@@ -506,15 +608,20 @@ html {
   align-items: center;
   flex-direction: column;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 #navigator a {
-  background-color: #7b7a75;
+  background-color: var(--base);
   height: 35px;
   width: 35px;
   border-radius: 50%;
   cursor: pointer;
   margin: 10px 0;
+  transition: 0.1s ease-in-out;
+}
+#navigator a:hover {
+  transform: scale(1.2);
+  background-color: var(--flat);
 }
 #navigator .__home,
 #navigator .__about,
@@ -523,32 +630,44 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 12px;
+  color: var(--base);
 }
 #navigator #top-left-menu {
   position: absolute;
-  left: 60px;
-  top: 20px;
+  left: 100px;
+  top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 #navigator #top-left-menu .theme-selector {
-  display: flex;
+  position: relative;
+  background-color: var(--accent);
+  border-radius: 25px;
 }
 #navigator #top-left-menu .theme-selector i {
+  position: absolute;
   padding: 12px;
-  background-color: #7b7a75;
-  border-radius: 25px 0 0 25px;
   cursor: pointer;
-}
-#navigator #top-left-menu .theme-selector i:hover {
-  background-color: black;
-  color: white;
+  background-color: #7b7a75;
+  transition: 0.2s ease-in-out;
 }
 #navigator #top-left-menu .theme-selector .selected-theme {
-  background-color: #f5b73b;
-  border-radius: 0 25px 25px 0;
+  background-color: var(--accent);
+  transform: translateY(-40px);
+}
+
+:root {
+  --accent: #f5b73b;
+  --base: #575654;
+  --flat: #eceef1;
+}
+
+.theme-dark {
+  --accent: #18c;
+  --base: #f0f0f0;
+  --flat: #2a2a2a;
 }
 
 @media (max-width: 868px) {
@@ -582,17 +701,20 @@ html {
     font-size: 40px;
     margin: 0 10px;
   }
-  #about-page #greeting h5 {
-    font-size: 20px;
+  #about-page #greeting .user-title {
+    font-size: 18px;
+  }
+  #about-page #greeting .yellow-line-one {
+    transition: 1s ease-in-out;
   }
   #about-page #about-me {
     width: 60vw;
     margin: 0 0 50px 70px;
   }
-  #about-page #about-me .yellow-line {
-    width: 3px;
+  #about-page #about-me .yellow-line-one {
+    transition: 1s ease-in-out;
   }
-  #about-page #about-me p {
+  #about-page #about-me .user-text {
     font-size: 14px;
   }
   #about-page #skills i {

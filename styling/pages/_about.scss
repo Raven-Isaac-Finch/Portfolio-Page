@@ -8,32 +8,41 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--flat);
     #about-picture {
         position: absolute;
         opacity: 0.3;
         width: 100vw;
         height: 100vh;
-        z-index: -1;
     }
     #greeting {
         display: flex;
         align-items: center;
         justify-content: space-around;
         width: 40vw;
-        margin-bottom: 20px;
-        .yellow-line {
-            background-color: $orange-color;
+        margin-bottom: 50px;
+        z-index: 1;
+        .yellow-line-one {
+            position: absolute;
+            margin-left: 750px;
+            background-color: var(--accent);
             width: 5px;
             height: 100px;
+            transition: 0.5s ease-in-out;
         }
         .fa-user {
             font-size: 60px;
-            color: $orange-color;
+            color: var(--accent);
+            opacity: 0;
+            transition: 1s ease-in-out;
         }
-        h5 {
+       .user-title {
             font-weight: bold;
             font-size: 25px;
             font-family: $font-secondary;
+            color: var(--base);
+            opacity: 0;
+            transition: 1s ease-in-out;
         }
     }
     #about-me {
@@ -42,20 +51,28 @@
         justify-content: space-around;
         width: 40vw;
         margin-bottom: 100px;
-        .yellow-line {
-            background-color: $orange-color;
+        z-index: 1;
+        .yellow-line-one {
+            background-color: var(--accent);
             width: 5px;
             height: 100px;
+            position: absolute;
+            margin-left: 750px;
+            transition: 0.5s ease-in-out;
         }
-        p {
+        .user-text {
             width: 91.5%;
             font-family: $font-primary;
             line-height: 25px;
             font-size: 18px;
+            color: var(--base);
+            opacity: 0;
+            transition: 1s ease-in-out;
         }
     }
     #skills {
-        background-color: $orange-color;
+        z-index: 1;
+        background-color: var(--accent);
         width: 100vw;
         height: 20vh;
         display: flex;
@@ -64,6 +81,7 @@
         i {
             font-size: 80px;
             margin: 0 40px;
+            color: var(--base);
         }
     }
 }

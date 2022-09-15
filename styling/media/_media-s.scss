@@ -37,17 +37,20 @@
                 font-size: 40px;
                 margin: 0 10px;
             }
-            h5 {
-                font-size: 20px;
+            .user-title {
+                font-size: 18px;
+            }
+            .yellow-line-one {
+                transition: 1s ease-in-out;
             }
         }
         #about-me {
             width: 60vw;
             margin: 0 0 50px 70px;
-            .yellow-line {
-                width: 3px;
+            .yellow-line-one {
+                transition: 1s ease-in-out;
             }
-            p {
+            .user-text {
                 font-size: 14px;
             }
         }

@@ -1,12 +1,12 @@
 @import '../absract/variables';
 
 #experience-page {
+    background-color: var(--flat);
     #experience-picture {
         position: absolute;
         opacity: 0.3;
         width: 100vw;
         height: 100vh;
-        z-index: -1;
     }
     .experience-container {
         position: relative;
@@ -21,8 +21,9 @@
         position: absolute;
         top: 50px;
         left: 120px;
+        color: var(--base);
         &__bachelor {
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid var(--flat);
             margin-bottom: 50px;
             .school {
                 font-weight: bold;
@@ -39,7 +40,7 @@
             }
         }
         &__master {
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid var(--flat);
             .school {
                 font-weight: bold;
                 font-size: 18px;
@@ -60,6 +61,7 @@
         bottom: 20px;
         left: 320px;
         width: 350px;
+        color: var(--base);
         .one,
         .two,
         .three,
@@ -69,7 +71,7 @@
         .seven {
             display: flex;
             justify-content: space-between;margin-bottom: 10px;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid var(--flat);
             .from {
                 font-weight: bold;
                 font-family: $font-secondary;
@@ -88,10 +90,11 @@
         position: absolute;
         top: 50px;
         left: 820px;
+        color: var(--base);
         .exp-one,
         .exp-two {
             margin-bottom: 50px;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid var(--flat);
             .where {
                 font-weight: bold;
                 font-size: 18px;
@@ -111,6 +114,7 @@
         position: absolute;
         bottom: 250px;
         left: 1020px;
+        color: var(--base);
         .where {
             font-weight: bold;
             font-size: 18px;
@@ -131,12 +135,13 @@
     .ie-symbol {
         position: absolute;
         z-index: 1;
-        background-color: $orange-color;
+        background-color: var(--accent);
         padding: 10px;
         font-size: 26px;
         border-radius: 100%;
         display: flex;
         align-items: center;
+        color: var(--base);
     }
     .education-symbol {
         left: 80px;
@@ -154,13 +159,13 @@
         position: absolute;
         height: 5px;
         width: 90vw;
-        background-color: $orange-color;
+        background-color: var(--accent);
     }
     .vertical.line {
         position: absolute;
         width: 5px;
         height: 50vh;
-        background-color: $orange-color;
+        background-color: var(--accent);
     }
     .vertical.line.one {
         top: 0;

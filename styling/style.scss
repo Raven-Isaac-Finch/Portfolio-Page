@@ -13,7 +13,7 @@ html {
 }
 
 #navigator {
-    background-color: $orange-color;
+    background-color: var(--accent);
     width: 100px;
     height: 100vh;
     display: flex;
@@ -21,14 +21,19 @@ html {
     align-items: center;
     flex-direction: column;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     a {
-        background-color: $grey-color;
+        background-color: var(--base);
         height: 35px;
         width: 35px;
         border-radius: 50%;
         cursor: pointer;
         margin: 10px 0;
+        transition: 0.1s ease-in-out;
+        &:hover {
+            transform: scale(1.2);
+            background-color: var(--flat);
+        }
     }
     .__home,
     .__about,
@@ -37,32 +42,31 @@ html {
         font-family: $font-secondary;
         font-weight: bold;
         font-size: 12px;
+        color: var(--base);
     }
 
     #top-left-menu {
         position: absolute;
-        left: 60px;
-        top: 20px;
+        left: 100px;
+        top: 60px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         .theme-selector {
-            display: flex;
+            position: relative;
+            background-color: var(--accent);
+            border-radius: 25px;
             i {
+                position: absolute;
                 padding: 12px;
-                background-color: $grey-color;
-                border-radius: 25px 0 0 25px;
                 cursor: pointer;
-                &:hover {
-                    background-color: black;
-                    color: white;
-                }
+                background-color: #7b7a75;
+                transition: 0.2s ease-in-out; 
             }
             .selected-theme {
-                background-color: $orange-color;
-                border-radius: 0 25px 25px 0;
-                
+                background-color: var(--accent);
+                transform: translateY(-40px);
             }
         }
     }

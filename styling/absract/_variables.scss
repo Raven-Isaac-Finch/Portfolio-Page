@@ -1,6 +1,19 @@
-$orange-color: #f5b73b;
-$grey-color: #7b7a75;
-$l-blue-color: #80ceff;
+:root {
+    --accent: #f5b73b;
+    --base: #575654;
+    --flat: #eceef1;
+}
+
+.theme-dark {
+    --accent: #18c;
+    --base: #f0f0f0;
+    --flat: #2a2a2a;
+}
+
+// $orange-color: #f5b73b;
+// $grey-color: #7b7a75;
+// $l-blue-color: #80ceff;
+// $dark-color: #3e3e42;
 $font-primary: 'Playfair Display', serif;
 $font-secondary: 'Montserrat', sans-serif;
 

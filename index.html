@@ -50,13 +50,13 @@
     <div id="about-page">
         <img id="about-picture" src="/assets/amy-hirschi-szrJ3wjzOMg-unsplash.jpg" alt="about-piture">
         <div id="greeting">
-            <div class="yellow-line"></div>
+            <div class="yellow-line-one"></div>
             <i class="fa-solid fa-user"></i>
-            <h5>Hi, my name is Batuhan aka Raven</h5>
+            <h5 class="user-title">Hi, my name is Batuhan aka Raven</h5>
         </div>
         <div id="about-me">
-            <div class="yellow-line"></div>
-            <p>I have always been fascinated by computers, mainly software and always been interested in coding. This career has been my dream as far as I can remember and now, it has become real!</p>
+            <div class="yellow-line-one"></div>
+            <p class="user-text">I have always been fascinated by computers, mainly software and always been interested in coding. This career has been my dream as far as I can remember and now, it has become real!</p>
         </div>
         <div id="skills">
             <i class="fa-brands fa-react"></i>
@@ -245,12 +245,13 @@
     <footer>
         <div>
             <p>And that's it! Thank you for taking a look at this all the way through.</p>
-            <p>As a final note, I cannot say this is the whole story without thanking the love of my life- Without her, I would not be here.</p>
+            <p>As a final note, I cannot say this is the whole story without thanking <strong><span style="color:blueviolet" class="hidden-love">the love of my life</span></strong><span class="love"></span> - Without her, I would not be here.</p>
             <p>You can directly contact me for my resume, details or any questions you might have.</p>
             <p>Have a Wonderful Day!</p>
         </div>
         <a href="mailto: purplebox02@gmail.com">E-mail</a>
     </footer>
+    <script src="./lib/noframework.waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         let typed = new Typed("#typed",{
@@ -259,7 +260,7 @@
             backSpeed: 20,
             cursorChar:'|',
             smartBackspace: true
-        })
-</script>
+        });
+    </script>
 </body>
 </html>
