@@ -642,23 +642,27 @@ html {
   }
   #experience-page .education {
     left: 150px;
-    display: none;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
   }
   #experience-page .certificate {
     top: 150px;
     left: 150px;
     width: 60%;
-    display: none;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
   }
   #experience-page .past-experience {
     left: 150px;
     top: 350px;
-    display: none;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
   }
   #experience-page .it-experience {
     left: 150px;
     top: 600px;
-    display: none;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
   }
   #experience-page .horizontal.line,
 #experience-page .vertical.line.two,
@@ -673,20 +677,32 @@ html {
     top: 150px;
     cursor: pointer;
   }
+  #experience-page .education-symbol:hover ~ .education {
+    opacity: 1;
+  }
   #experience-page .cert-symbol {
     top: 300px;
     left: 80px;
     cursor: pointer;
+  }
+  #experience-page .cert-symbol:hover ~ .certificate {
+    opacity: 1;
   }
   #experience-page .pe-symbol {
     top: 450px;
     left: 80px;
     cursor: pointer;
   }
+  #experience-page .pe-symbol:hover ~ .past-experience {
+    opacity: 1;
+  }
   #experience-page .ie-symbol {
     top: 600px;
     left: 80px;
     cursor: pointer;
+  }
+  #experience-page .ie-symbol:hover ~ .it-experience {
+    opacity: 1;
   }
   #projects-page h2 {
     position: relative;
