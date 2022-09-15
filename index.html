@@ -16,10 +16,6 @@
 <body>
     <div id="navigator">
         <div id="top-left-menu">
-            <div id="language-selector">
-                <p>TR</p>
-                <p class="selected-language">ENG</p>
-            </div>
             <div class="theme-selector">
                 <i class="fa-solid fa-moon"></i>
                 <i class="fa-solid fa-sun selected-theme"></i>
@@ -37,8 +33,8 @@
     <div id="home-page">
         
         <div id="main-container">
-            <h1>Welcome to My Portfolio Page</h1>
-            <h3>Front-End Developer</h3>
+            <h1>Where All Land is <span style="color:blueviolet">Purple</span></h1>
+            <h3><span id="typed"></span></h3>
             <div id="home-icon-holder">
                 <a href="mailto: purplebox02@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/ravenisaac/"><i class="fa-brands fa-linkedin"></i></a>
@@ -66,6 +62,10 @@
             <i class="fa-brands fa-react"></i>
             <i class="fa-brands fa-js"></i>
             <i class="fa-brands fa-sass"></i>
+            <i class="fa-brands fa-bootstrap"></i>
+            <i class="fa-brands fa-git-alt"></i>
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-linux"></i>
         </div>
     </div>
     <div id="experience-page">
@@ -180,7 +180,6 @@
         <div class="page-container">
             <div class="project-container">
                 <div class="project-one">
-                    <img src="./assets/projects-imgs/blackjack.png" alt="blackjack" id="blackjack-img">
                     <div class="text-container">
                         <p class="app-title">Blackjack Game</p>
                         <p class="app-desc">A basic Blackjack game against a simple AI. However, the app is currently out of date since the random deck that it requests from the public API only lasts for a month LOL. The game works perfectly though if you pull out a new deck!</p>
@@ -191,7 +190,6 @@
                     </div>
                 </div>
                 <div class="project-two">
-                    <img src="./assets/projects-imgs/countries.png" alt="countries" id="countries-img">
                     <div class="text-container">
                         <p class="app-title">Countries App</p>
                         <p class="app-desc">This simple app fetches certain data about the country the user inputs such as currency, capital, region and border neighbors.</p>
@@ -202,7 +200,6 @@
                     </div>
                 </div>
                 <div class="project-three">
-                    <img src="./assets/projects-imgs/hangman.png" alt="hangman" id="hangman-img">
                     <div class="text-container">
                         <p class="app-title">Hangman Game</p>
                         <p class="app-desc">This version of Hangman basically fetches a random 6-letter word from a public dictionary API. Plus, everytime the user enters a wrong letter, a poor little man starts to appear limb by limb.</p>
@@ -213,7 +210,6 @@
                     </div>
                 </div>
                 <div class="project-four">
-                    <img src="./assets/projects-imgs/heroes.png" alt="heroes" id="heroes-img">
                     <div class="text-container">
                         <p class="app-title">Heroes II Database</p>
                         <p class="app-desc">The perfect database for the perfect game that came out in 1996 originally. This database fetches the game's data from a JSON file that I have written to display the creatures and artifacts in the game.</p>
@@ -225,7 +221,6 @@
                 </div>
             </div>
             <div class="project-index-container">
-                <h4>Check out All the Projects!</h4>
                 <div class="container">
                     <div class="react-projects">
                         <a href="https://github.com/Raven-Isaac-Finch/React-Projects">Here are all the React Projects</a>
@@ -256,5 +251,15 @@
         </div>
         <a href="mailto: purplebox02@gmail.com">E-mail</a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed("#typed",{
+            strings: ['This is Raven', 'I am a Front-end Developer', 'And this is my personal page.', 'So..', 'So.. Welcome!'],
+            typeSpeed: 40,
+            backSpeed: 20,
+            cursorChar:'|',
+            smartBackspace: true
+        })
+</script>
 </body>
 </html>

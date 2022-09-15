@@ -36,13 +36,6 @@
             display: flex;
             justify-content: space-between;
             border-bottom: 2px solid white;
-            #blackjack-img,
-            #countries-img,
-            #hangman-img,
-            #heroes-img {
-                width: 260px;
-                height: 160px;
-            }
             .text-container {
                 padding: 20px;
                 width: 550px;
@@ -87,12 +80,7 @@
         }
     }
     .project-index-container {
-        height: 90%;
-        h4 {
-            font-family: $font-secondary;
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
+        height: 85%;
         .container {
             display: grid;
             grid-template: 200px 200px 200px / 100%;

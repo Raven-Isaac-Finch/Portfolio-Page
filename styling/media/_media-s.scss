@@ -14,6 +14,9 @@
                     margin: 0 20px;
                 }
             }
+            #typed {
+                font-size: 16px;
+            }
         }
         #home-picture {
             left: 0;
@@ -50,8 +53,11 @@
         }
         #skills {
             i {
-                font-size: 40px;
-                margin: 0 0 0 40px;
+                font-size: 30px;
+                margin: 0 0 0 20px;
+            }
+            .fa-react {
+                margin-left: 70px;
             }
         }
     }

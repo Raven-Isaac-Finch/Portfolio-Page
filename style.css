@@ -361,25 +361,6 @@
   justify-content: space-between;
   border-bottom: 2px solid white;
 }
-#projects-page .page-container .project-one #blackjack-img,
-#projects-page .page-container .project-one #countries-img,
-#projects-page .page-container .project-one #hangman-img,
-#projects-page .page-container .project-one #heroes-img,
-#projects-page .page-container .project-two #blackjack-img,
-#projects-page .page-container .project-two #countries-img,
-#projects-page .page-container .project-two #hangman-img,
-#projects-page .page-container .project-two #heroes-img,
-#projects-page .page-container .project-three #blackjack-img,
-#projects-page .page-container .project-three #countries-img,
-#projects-page .page-container .project-three #hangman-img,
-#projects-page .page-container .project-three #heroes-img,
-#projects-page .page-container .project-four #blackjack-img,
-#projects-page .page-container .project-four #countries-img,
-#projects-page .page-container .project-four #hangman-img,
-#projects-page .page-container .project-four #heroes-img {
-  width: 260px;
-  height: 160px;
-}
 #projects-page .page-container .project-one .text-container,
 #projects-page .page-container .project-two .text-container,
 #projects-page .page-container .project-three .text-container,
@@ -440,12 +421,7 @@
   box-shadow: 0px 5px 15px 0px #000000;
 }
 #projects-page .project-index-container {
-  height: 90%;
-}
-#projects-page .project-index-container h4 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  margin-bottom: 20px;
+  height: 85%;
 }
 #projects-page .project-index-container .container {
   display: grid;
@@ -550,32 +526,12 @@ html {
 }
 #navigator #top-left-menu {
   position: absolute;
-  left: 40px;
-  top: 0;
+  left: 60px;
+  top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-#navigator #top-left-menu #language-selector {
-  display: flex;
-}
-#navigator #top-left-menu #language-selector p {
-  margin: 20px 0px;
-  padding: 10px 15px;
-  background-color: #7b7a75;
-  border-radius: 25px 0 0 25px;
-  width: 60px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-#navigator #top-left-menu #language-selector p:hover {
-  background-color: black;
-  color: white;
-}
-#navigator #top-left-menu #language-selector .selected-language {
-  background-color: #f5b73b;
-  border-radius: 0 25px 25px 0;
 }
 #navigator #top-left-menu .theme-selector {
   display: flex;
@@ -604,6 +560,9 @@ html {
   #home-page #main-container #home-icon-holder i {
     font-size: 50px;
     margin: 0 20px;
+  }
+  #home-page #main-container #typed {
+    font-size: 16px;
   }
   #home-page #home-picture {
     left: 0;
@@ -637,8 +596,11 @@ html {
     font-size: 14px;
   }
   #about-page #skills i {
-    font-size: 40px;
-    margin: 0 0 0 40px;
+    font-size: 30px;
+    margin: 0 0 0 20px;
+  }
+  #about-page #skills .fa-react {
+    margin-left: 70px;
   }
   #experience-page .education {
     left: 150px;

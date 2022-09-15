@@ -41,32 +41,12 @@ html {
 
     #top-left-menu {
         position: absolute;
-        left: 40px;
-        top: 0;
+        left: 60px;
+        top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        #language-selector {
-            display: flex;
-            p {
-                margin: 20px 0px;
-                padding: 10px 15px;
-                background-color: $grey-color;
-                border-radius: 25px 0 0 25px;
-                width: 60px;
-                cursor: pointer;
-                transition: 0.2s ease-in-out;
-                &:hover {
-                    background-color: black;
-                    color: white;
-                }
-            }
-            .selected-language {
-                background-color: $orange-color;
-                border-radius: 0 25px 25px 0;
-            }
-        }
         .theme-selector {
             display: flex;
             i {
