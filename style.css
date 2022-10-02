@@ -279,7 +279,7 @@
 #experience-page .certificate .five .for,
 #experience-page .certificate .six .for,
 #experience-page .certificate .seven .for {
-  font-size: 14px;
+  font-size: 12px;
 }
 #experience-page .certificate .one .in,
 #experience-page .certificate .two .in,
@@ -426,10 +426,9 @@
 }
 #projects-page .page-container {
   position: relative;
-  width: 90%;
-  height: 100%;
+  width: 100%;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -507,13 +506,10 @@
   color: var(--accent);
   box-shadow: 0px 5px 15px 0px #000000;
 }
-#projects-page .project-index-container {
-  height: 85%;
-}
 #projects-page .project-index-container .container {
   display: grid;
   grid-template: 200px 200px 200px/100%;
-  gap: 10px;
+  gap: 5px;
 }
 #projects-page .project-index-container .container .react-projects,
 #projects-page .project-index-container .container .html-css-projects,
@@ -547,7 +543,7 @@
 #projects-page .project-index-container .container .react-projects i,
 #projects-page .project-index-container .container .html-css-projects i,
 #projects-page .project-index-container .container .javascript-projects i {
-  font-size: 100px;
+  font-size: 60px;
   color: var(--base);
 }
 
@@ -860,12 +856,12 @@ html {
     margin-top: 15px;
   }
   #projects-page .page-container .project-index-container .container {
-    grid-template: 150px/100px 100px 100px;
+    grid-template: 120px/100px 100px 100px;
   }
   #projects-page .page-container .project-index-container .container .react-projects a,
 #projects-page .page-container .project-index-container .container .html-css-projects a,
 #projects-page .page-container .project-index-container .container .javascript-projects a {
-    font-size: 14px;
+    font-size: 12px;
   }
   #projects-page .page-container .project-index-container .container .react-projects i,
 #projects-page .page-container .project-index-container .container .html-css-projects i,

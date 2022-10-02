@@ -21,10 +21,9 @@
     }
     .page-container {
         position: relative;
-        width: 90%;
-        height: 100%;
+        width: 100%;
         margin: auto;
-        padding-top: 20px;
+        padding-top: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -85,11 +84,10 @@
         }
     }
     .project-index-container {
-        height: 85%;
         .container {
             display: grid;
             grid-template: 200px 200px 200px / 100%;
-            gap: 10px;
+            gap: 5px;
             .react-projects,
             .html-css-projects,
             .javascript-projects {
@@ -115,7 +113,7 @@
                     }
                 }
                 i {
-                    font-size: 100px;
+                    font-size: 60px;
                     color: var(--base);
                 }
             }
